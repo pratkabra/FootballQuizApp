@@ -37,14 +37,15 @@ const checkAnswer = (userAnswer, correctAnswer) => {
     console.log("Correct Answer !! \n")
     return true;
   }else{
-    console.log("Wrong Answer :(( \n")
+    console.log(`Wrong Answer :(( The correct answer is: ${correctAnswer}\n`)
+
     return false;
   }
 };
 
 const quesOptions=(options)=>{
   options.forEach((option, index)=>{
-    // let index = 1;
+    // let index = 0;
     //index = option.indexOf() + 1;
     console.log(`${index+1}. ${option}`)
     // index++;
